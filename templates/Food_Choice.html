@@ -1,0 +1,13 @@
+{% block body %}
+<div class="jumbotron text-center">
+  <h1>Food Drive database</h1>
+  <p class="lead"> Choose One</p>
+    <form>
+       <button formaction="/AddNewFood">Food item is new</button>
+    </form>
+    </br> 
+    <form>
+       <button formaction="/AddExistingFood">Food item exists already</button>
+    </form>    
+</div>
+{% endblock %}

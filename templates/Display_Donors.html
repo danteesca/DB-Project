@@ -1,0 +1,21 @@
+{% block body %}
+<div class="jumbotron text-center">
+  <h1>Manager Page</h1>
+<table>
+  <tr>
+    <th>Donor ID</th>
+    <th>First Name</th>
+    <th>Last name</th>
+    <th> Address </th>
+    <th> Phone Number </th>
+  </tr>
+  {% for row in users %}
+  <tr>
+    {% for column in row %}
+     <td>{{ column }}</td>
+    {% endfor %}
+  </tr>
+{% endfor %}
+</table>
+</div>
+{% endblock %}
