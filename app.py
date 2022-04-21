@@ -154,7 +154,7 @@ def addExistingFood():
         print (foodID,foodName,foodType,expDate, donorID, quantity)
         sql = "INSERT INTO FOOD(foodID, foodName, foodType, expDate) \
             VALUES ('%s', '%s','%s', '%s')" % \
-            (str(foodID), foodName, foodType, expDate)
+            (foodID, foodName, foodType, expDate)
         print (sql)
         Insert (sql)
         sql2 = "INSERT INTO DONATES(donorID, foodID, quantity) \
