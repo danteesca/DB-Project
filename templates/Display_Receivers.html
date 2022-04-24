@@ -1,0 +1,25 @@
+{% block body %}
+<div class="jumbotron text-center">
+  <h1>Recipients Page</h1>
+  <p class="home"></p>
+    <form>
+       <button formaction="/">Home</button>
+    </form>
+<table>
+  <tr>
+    <th>Receiver ID</th>
+    <th>First Name</th>
+    <th>Last name</th>
+    <th> Address </th>
+    <th> Phone Number </th>
+  </tr>
+  {% for row in users %}
+  <tr>
+    {% for column in row %}
+     <td>{{ column }}</td>
+    {% endfor %}
+  </tr>
+{% endfor %}
+</table>
+</div>
+{% endblock %}

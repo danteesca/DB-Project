@@ -1,0 +1,49 @@
+{% block body %}
+<div class="jumbotron text-center">
+  <h1>Food Bank database</h1>
+  <p class="lead"> Choose One</p>
+    <form>
+       <button formaction="/Display_Donors">Show Donors</button>
+    </form>
+    </br> 
+    <form>
+       <button formaction="/Search_Donors">Search Donors</button>
+    </form> 
+  </br> 
+  <form>
+     <button formaction="/Display_Receivers">Show Recipients</button>
+  </form>    
+</br> 
+<form>
+   <button formaction="/Search_Receivers">Search Recipients</button>
+</form>
+</br> 
+<form>
+   <button formaction="/Display_Foods">Show Food Items</button>
+</form>
+</br> 
+<form>
+   <button formaction="/Search_Food">Search Food Items</button>
+</form>
+</br> 
+<form>
+   <button formaction="/AddDonor">Add New Donor</button>
+</form>
+</br> 
+<form>
+   <button formaction="/AddReceiver">Add New Recipient</button>
+</form>
+</br> 
+<form>
+   <button formaction="/AddFood">Add Food Item</button>
+</form>
+</br> 
+<form>
+   <button formaction="/AddReceives">Add New Donation</button>
+</form>
+</br> 
+<form>
+   <button formaction="/TotalQuantity">Find Quantity</button>
+</form>
+</div>
+{% endblock %}

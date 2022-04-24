@@ -1,0 +1,31 @@
+<h1>
+    This is Where You Can Search for Food Items
+</h1>
+<p class="home"></p>
+    <form>
+       <button formaction="/">Home</button>
+    </form>
+<form method="post">
+  Food Name: <input name="foodName"/>
+  <br/><br/>
+  Food Type: <input name="foodType"/>
+  <br/><br/>
+  <button type="submit">Submit</button>
+  <br/><br/>
+  <table>
+    <tr>
+      <th>Food ID</th>
+      <th>Food Name</th>
+      <th>Food Type</th>
+      <th>Expiry Date</th>
+    </tr>
+    {% for row in users %}
+    <tr>
+      {% for column in row %}
+       <td>{{ column }}</td>
+      {% endfor %}
+    </tr>
+  {% endfor %}
+  </table>
+  </div>
+</form>
